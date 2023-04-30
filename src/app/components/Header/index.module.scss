@@ -1,0 +1,9 @@
+.header {
+    background: rgba(22, 22, 23, 0.8);
+    overflow: hidden;
+    height: 48px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    transition: all 0.4s ease-out, background 1s ease-out;
+}
