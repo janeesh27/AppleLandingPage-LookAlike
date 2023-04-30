@@ -1,7 +1,7 @@
 @import 'include-media';
 
 .main {
-    margin-top: 100px;
+    margin-top: 48px;
     background: #000;
     width: 100vw;
     z-index: -2;
@@ -52,6 +52,16 @@
         video {
             height: auto;
             width: 70%;
+        }
+    }
+
+    .headingContainer {
+        h1 {
+            font-size: 58px;
+        }
+
+        h2 {
+            font-size: 28px;
         }
     }
 }
