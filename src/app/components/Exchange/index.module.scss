@@ -1,0 +1,25 @@
+@import 'include-media';
+ 
+.container{
+    text-align: center;
+
+
+    a{
+        font-size: 35px;
+        text-decoration: none;
+       color: rgb(66, 80, 241);
+    
+    &:hover {
+        text-decoration: underline;
+      }
+}
+}
+
+@include media('<786px'){
+    .container{
+
+        a{
+            font-size: 18px;
+        }
+    }
+}
