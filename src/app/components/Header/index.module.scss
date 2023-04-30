@@ -5,7 +5,6 @@
     overflow: hidden;
     height: 48px;
     width: 100%;
-    z-index: 1;
     position: fixed;
     width: 100vw;
     backdrop-filter: saturate(180%) blur(20px);
@@ -17,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // display: block;
 
     .logo {
         cursor: pointer;
@@ -186,6 +184,32 @@
 
 @include media('>786px') {
     .header {
+        padding: 0 120px;
+    }
+
+    .navElements {
+        justify-content: space-evenly;
+    }
+
+    .iconContainer {
         display: none;
+    }
+    .menuDesktop {
+        width: fit-content;
+        display: flex;
+        gap: 2rem;
+
+        .menuItem {
+            margin-top: 0;
+            opacity: 1;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+        }
     }
 }
