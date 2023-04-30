@@ -1,3 +1,5 @@
+@import 'include-media';
+
 .header {
     background: rgba(22, 22, 23, 0.8);
     overflow: hidden;
@@ -5,5 +7,185 @@
     width: 100%;
     z-index: 1;
     position: fixed;
+    width: 100vw;
+    backdrop-filter: saturate(180%) blur(20px);
     transition: all 0.4s ease-out, background 1s ease-out;
+}
+
+.navElements {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // display: block;
+
+    .logo {
+        cursor: pointer;
+        fill: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.rightNvElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menuOpen {
+    height: 100vh;
+    background: #111;
+    transition: all 0.45s ease-out, background 0.8s ease-out;
+    z-index: 9999;
+
+    .logo {
+        display: none;
+    }
+
+    .iconContainer {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        left: calc(100vw - 2rem - 15px);
+
+        .menuIcon {
+            .bar {
+                transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                transition-delay: 0.1s;
+            }
+
+            .bar1 {
+                -webkit-transform: translateY(4px) rotate(45deg);
+                transform: translateY(4px) rotate(45deg);
+            }
+
+            .bar2 {
+                -webkit-transform: translateY(3px) rotate(-45deg);
+                transform: translateY(3px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+/* Menu Icon */
+.iconContainer {
+    position: relative;
+    height: 48px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+    .menuIcon {
+        width: 15px;
+        height: 10px;
+        position: relative;
+        display: block;
+        margin: -4px auto 0;
+        top: 50%;
+
+        .bar {
+            width: 100%;
+            height: 1px;
+            display: block;
+            position: relative;
+            background: #fff;
+            transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        }
+
+        .bar1 {
+            -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        .bar2 {
+            -webkit-transform: translateY(6px) rotate(0deg);
+            transform: translateY(6px) rotate(0deg);
+        }
+    }
+}
+
+.menuMobile {
+    position: relative;
+    display: block;
+    padding: 0px 40px 0;
+    list-style: none;
+
+    a {
+        display: block;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 32px;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+.menuItem {
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99),
+        -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99),
+        -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+    &:nth-child(1) {
+        transition-delay: 0.35s;
+    }
+    &:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+    &:nth-child(3) {
+        transition-delay: 0.25s;
+    }
+    &:nth-child(4) {
+        transition-delay: 0.2s;
+    }
+    &:nth-child(5) {
+        transition-delay: 0.15s;
+    }
+    &:nth-child(6) {
+        transition-delay: 0.1s;
+    }
+    &:nth-child(7) {
+        transition-delay: 0.05s;
+    }
+}
+
+.menuOpen {
+    .menuItem {
+        opacity: 1;
+
+        &:nth-child(7) {
+            transition-delay: 0.35s;
+        }
+        &:nth-child(6) {
+            transition-delay: 0.3s;
+        }
+        &:nth-child(5) {
+            transition-delay: 0.25s;
+        }
+        &:nth-child(4) {
+            transition-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            transition-delay: 0.15s;
+        }
+        &:nth-child(2) {
+            transition-delay: 0.1s;
+        }
+        &:nth-child(1) {
+            transition-delay: 0.05s;
+        }
+    }
+}
+
+@include media('>786px') {
+    .header {
+        display: none;
+    }
 }
