@@ -1,21 +1,25 @@
+@import 'include-media';
+
 .footer {
     background-color: rgba(22, 22, 23, 0.8);
     color: whitesmoke;
-    
-    
     padding: 20px 0;
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
     
    .footerlinks{
-    border-top: 2px solid whitesmoke;
+ 
     display: flex;
     justify-content: center;
     
     padding-top: 8px;
    }
+   .linebreak{
+    border-top: 2px solid whitesmoke;
+}
   
     a {
       color: #666666;
@@ -29,4 +33,21 @@
       }
     }
   }
-  
+
+  @include media('<786px') 
+  {
+    .footer{
+    flex-direction: column;
+    align-items: center;
+
+    .footerlinks {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 16px;
+
+      a {
+        margin: 8px;
+      }
+    }
+  }
+}

@@ -4,11 +4,13 @@ const index = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footerlinks}>
+      <div className={styles.linebreak}>
        <p> Copyright © 2023 Apple Inc. All rights reserved.</p>
-        <a href="#">Privacy Policy</a> | 
-        <a href="#">Terms of Use</a> | 
-        <a href="#">Sales and Refunds</a> | 
+        <a href="#">Privacy Policy</a> 
+        <a href="#">Terms of Use</a> 
+        <a href="#">Sales and Refunds</a>  
         <a href="#">Legal Site Map</a>
+      </div>
       </div>
   </div>
   )
