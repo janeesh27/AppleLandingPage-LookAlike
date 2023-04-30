@@ -193,6 +193,7 @@
 @include media('>786px') {
     .header {
         padding: 0 120px;
+        z-index: 99999;
     }
 
     .navElements {
