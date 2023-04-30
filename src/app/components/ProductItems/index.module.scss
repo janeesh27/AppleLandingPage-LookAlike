@@ -39,6 +39,17 @@
     
   }
 }
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+
+  video {
+    width: 80%;
+    height: auto;
+   
+  }
+}
   
   .imgContainer {
     display: flex;
@@ -50,6 +61,7 @@
      
     }
   }
+    
   @include media('<786px') {
     .productContainer {
         flex-direction: column;

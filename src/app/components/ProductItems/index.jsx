@@ -6,13 +6,15 @@ const index = () => {
     <div className={styles.productContainer}>
     <div className={styles.product}>
       <div className={styles.textContainer}>
-        <h3>ARGlass</h3>
+        <h3>AR Glasses</h3>
         <p>SERIES 1</p>
      
       <h2>Dive into the Future!</h2></div>
-      <div className={styles.imgContainer}>
-        <img src="/media/glass.jpg" alt="iglass" />
-      </div>
+      <div className={styles.videoContainer}>
+                    <video loop muted playsInline autoPlay>
+                        <source src="media/glassVideo.mp4" />
+                    </video>
+                </div>
     </div>
     <div className={styles.product}>
       <div className={styles.textContainer}>
