@@ -13,7 +13,7 @@ export default function Home() {
             <AppleWatch />
             <ProductItems />
             <Exchange />
-            {/* <Footer /> */}
+           <Footer /> 
         </>
     );
 }
