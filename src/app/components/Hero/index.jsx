@@ -1,12 +1,11 @@
+import Title from '../Title';
+
 import styles from './index.module.scss';
 
 const Hero = () => {
     return (
         <main className={styles.main}>
-            <div className={styles.headingContainer}>
-                <h1>iPhone 14 Pro</h1>
-                <h2>Pro. Beyond</h2>
-            </div>
+            <Title heading="iPhone 14 Pro" subHeading="Pro. Beyond" />
 
             <div className={styles.linkContainer}>
                 <a href="#">Learn more </a>

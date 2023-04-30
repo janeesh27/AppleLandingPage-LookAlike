@@ -1,0 +1,28 @@
+@import 'include-media';
+
+.headingContainer {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@include media('>786px') {
+    .headingContainer {
+        h1 {
+            font-size: 58px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
