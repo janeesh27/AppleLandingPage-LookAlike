@@ -6,6 +6,9 @@
     height: 48px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
     backdrop-filter: saturate(180%) blur(20px);
     transition: all 0.4s ease-out, background 1s ease-out;
@@ -28,6 +31,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+}
+
+.menuDesktop {
+    display: none;
 }
 
 .menuOpen {
@@ -66,6 +73,7 @@
 
 /* Menu Icon */
 .iconContainer {
+    display: block;
     position: relative;
     height: 48px;
     cursor: pointer;
@@ -195,6 +203,7 @@
         display: none;
     }
     .menuDesktop {
+        display: block;
         width: fit-content;
         display: flex;
         gap: 2rem;
@@ -202,13 +211,14 @@
         .menuItem {
             margin-top: 0;
             opacity: 1;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.8) !important;
             cursor: pointer;
 
             a {
                 font-size: 14px;
                 font-weight: 400;
                 cursor: pointer;
+                color: rgba(255, 255, 255, 0.8) !important;
             }
         }
     }

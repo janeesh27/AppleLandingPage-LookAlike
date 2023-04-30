@@ -1,0 +1,57 @@
+@import 'include-media';
+
+.main {
+    margin-top: 100px;
+    background: #000;
+    width: 100vw;
+    z-index: -2;
+}
+
+.headingContainer {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+.linkContainer {
+    padding-bottom: 50px;
+    text-align: center;
+    margin-top: 5px;
+
+    a {
+        color: #2997ff;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.videoContainer {
+    width: 100%;
+
+    video {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 350px;
+        margin: auto;
+        z-index: 1;
+    }
+}
+
+@include media('>786px') {
+    .videoContainer {
+        video {
+            height: auto;
+            width: 70%;
+        }
+    }
+}
