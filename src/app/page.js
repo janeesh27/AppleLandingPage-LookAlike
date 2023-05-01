@@ -6,6 +6,7 @@ import ProductItems from './components/ProductItems';
 import Exchange from './components/Exchange';
 import Airpods from './components/Airpods';
 import ArGlasses from './components/Arglasses';
+import Slider from './components/Slider';
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Airpods />
             <ArGlasses />
             <Exchange />
+            <Slider />
             <Footer />
         </>
     );
