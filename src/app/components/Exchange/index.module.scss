@@ -1,13 +1,19 @@
 @import 'include-media';
  
+.section{
+    background-color:#fbfbfd;
+    font-weight: 600;
+}
 .container{
     text-align: center;
-
+background-color: #fbfbfd;
+font-weight: 600;
 
     a{
-        font-size: 35px;
+        font-size: 25px;
         text-decoration: none;
-       color: rgb(66, 80, 241);
+        color: #2997ff;
+       
     
     &:hover {
         text-decoration: underline;
@@ -16,6 +22,13 @@
 }
 
 @include media('<786px'){
+    .imgContainer{
+        width: 200%;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+
+    }
     .container{
 
         a{
