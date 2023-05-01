@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import AppleWatch from './components/AppleWatch';
 import ProductItems from './components/ProductItems';
 import Exchange from './components/Exchange';
+import Airpods from './components/Airpods';
 
 export default function Home() {
     return (
@@ -11,9 +12,10 @@ export default function Home() {
             <Header />
             <Hero />
             <AppleWatch />
-            <ProductItems />
+            {/* <ProductItems /> */}
+            <Airpods />
             <Exchange />
-           <Footer /> 
+            <Footer />
         </>
     );
 }
