@@ -9,7 +9,7 @@ const AppleWatch = () => {
             </div>
             <h1>A healthy leap ahead.</h1>
             <div className={styles.imgContainer}>
-                <img src="/media/appleWatch.jpg" alt="" />
+                <img src="/media/appleWatch.jpg" alt="applewatch" />
             </div>
         </div>
     );

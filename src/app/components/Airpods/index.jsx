@@ -10,7 +10,7 @@ const Airpods = () => {
                 <div className={styles.linkContainer}>
                     <a href="#">Watch the film </a>
                     <div className={styles.playIcon}>
-                        <img src="/media/play.svg" alt="" />
+                        <img src="/media/play.svg" alt="airpods" />
                     </div>
                 </div>
             </div>

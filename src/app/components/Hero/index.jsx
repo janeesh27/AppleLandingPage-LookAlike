@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
 
                 <div className={styles.imgContainer}>
-                    <img src="/media/iphoneImages.png" alt="" />
+                    <img src="/media/iphoneImages.png" alt="Iphone14" />
                 </div>
             </section>
         </>
