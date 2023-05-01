@@ -5,7 +5,7 @@ const index = () => {
     <div>
     <section className={styles.section}>
     
-    <Title  heading="Trade In" subHeading="Upgrade and save.It's that easy." black />
+    <Title  heading="Trade In" subHeading="Upgrade and save.It&apos;s that easy." black />
 
     <div className={styles.container}>
         <a href="#">See what your device is worth</a>
